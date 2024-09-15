@@ -2,8 +2,6 @@
 
 Ejemplo de Python API 
 
-## Instalación y detalles
-
 ## Ruta base configurada en este repositorio
 1. https://localhost:5000/api/v1/
 
@@ -25,32 +23,31 @@ Ejemplo de Python API
 
 ### Comandos necesarios para iniciar esta API
 
-archivos env
+# Archivos env
 
 1. sudo apt install python3-venv
 
-
-Entorno virtual
+# Entorno virtual
 
 2. python3 -m venv venv
 
-Dependencia de mysql
+# Dependencia de mysql
 3. pip install Flask Flask-SQLAlchemy pymysql python-dotenv marshmallow
 
-Instalar
+# Instalar
 4. sudo apt install pipx
 
-Paquetes
+# Paquetes
 5. pipx install flask
 6. pipx install flask-sqlalchemy
 7. pipx install pymysql
 8. pipx install python-dotenv
 9. pipx install marshmallow
 
-Docker build
+# Docker build
 10. docker-compose up --build
 
-mysqlclient linux
+# mysqlclient linux
 11. sudo apt update
 12. sudo apt install pkg-config libmysqlclient-dev
 13. pip install mysqlclient
