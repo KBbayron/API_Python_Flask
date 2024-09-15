@@ -1,6 +1,8 @@
 <center><h1>API Python implementando Flask</h1></center>
 
-Este proyecto es un prototipo para ser aplicado como API Rest. Utiliza tecnologias como Flask, git(github en este caso), docker y archivos Json.
+Este proyecto es un prototipo para ser aplicado como API Rest. Utiliza tecnologias como Flask, git(github en este caso), docker y archivos Json. Este trabajo es ideal para un API muy simple y ligero. Aconparado de Django por ejmplo que es de más alto nivel y con más funcionalidades integradas.
+
+Espero que te sea de provecho este trabajo, y porque no, te aporte en futuros trabajos. 
 
 ## Ruta base configurada en este repositorio
 1. https://localhost:5000/api/v1/
