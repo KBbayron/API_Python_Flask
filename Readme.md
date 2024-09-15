@@ -23,11 +23,11 @@ Ejemplo de Python API
 
 ## Comandos necesarios para iniciar esta API
 
-##3 Archivos env
+## 3 Archivos env
 
 1. sudo apt install python3-venv
 
-##3 Entorno virtual
+## 3 Entorno virtual
 
 2. python3 -m venv venv
 
