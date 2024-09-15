@@ -23,11 +23,11 @@ Ejemplo de Python API
 
 ## Comandos necesarios para iniciar esta API
 
-## 3 Archivos env
+### Archivos env
 
 1. sudo apt install python3-venv
 
-## 3 Entorno virtual
+### Entorno virtual
 
 2. python3 -m venv venv
 
@@ -53,10 +53,10 @@ Ejemplo de Python API
 13. pip install mysqlclient
 
 
-# Levantar el servicio
+## Levantar el servicio
 1. source venv/bin/activate
 2. python run.py
 
-# Para abandonar el servicio de la API
+## Para abandonar el servicio de la API
 1. crtl + c
 2. deactivate 
