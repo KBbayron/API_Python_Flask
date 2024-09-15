@@ -1,0 +1,61 @@
+
+
+
+
+    <center><h1>API Python</h1></center>
+
+Conecta  Ejemplo de Python API
+
+## Instalación
+
+### MySQL
+
+1. Descargar [MySQL](https://www.mysql.com/downloads/)
+2. Instalar
+   > **_Nota:_** La instalación de MySQL, es opcional. En su lugar puede usar la base de datos al entorno correspondiente, solicite el mismo a quién corresponda.
+
+### Entorno
+
+1. La arquitectura de esta API es en Flask
+
+2. Instalar
+
+### Proyecto
+
+1. Clonar el repositorio
+2. Dentro de la carpeta del proyecto encontrarás un archivo `.env.example`, duplícalo y renómbralo como `.env`
+3. Cambie las variables de entorno en el archivo `.env` para que se ajusten a su entorno
+
+crear una carpeta
+
+#archivos env
+sudo apt install python3-venv
+
+#entorno virtual
+
+python3 -m venv venv
+source venv/bin/activate
+# Para salir
+deactivate 
+
+
+#dependencia de mysql
+pip install Flask Flask-SQLAlchemy pymysql python-dotenv marshmallow
+
+#instalar
+sudo apt install pipx
+
+#paquetes
+pipx install flask
+pipx install flask-sqlalchemy
+pipx install pymysql
+pipx install python-dotenv
+pipx install marshmallow
+
+#Docker build
+docker-compose up --build
+
+#mysqlclient linux
+sudo apt update
+sudo apt install pkg-config libmysqlclient-dev
+pip install mysqlclient
