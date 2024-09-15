@@ -1,7 +1,3 @@
-
-
-
-
     <center><h1>API Python</h1></center>
 
 Conecta  Ejemplo de Python API
