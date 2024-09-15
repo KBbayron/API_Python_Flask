@@ -1,10 +1,10 @@
 <center><h1>API Python implementando Flask</h1></center>
 
-Conecta  Ejemplo de Python API
+Ejemplo de Python API 
 
-## Instalación
+## Instalación y detalles
 
-## ruta base configurada en este repositorio
+## Ruta base configurada en este repositorio
 1. https://localhost:5000/api/v1/
 
 ### MySQL
@@ -56,10 +56,10 @@ mysqlclient linux
 13. pip install mysqlclient
 
 
-### Levantar el servicio
+## Levantar el servicio
 1. source venv/bin/activate
 2. python run.py
 
-# Para abandonar el servicio de la API
+## Para abandonar el servicio de la API
 crtl + c
 deactivate 
