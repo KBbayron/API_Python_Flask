@@ -21,42 +21,42 @@ Ejemplo de Python API
 2. Dentro de la carpeta del proyecto encontrarás un archivo `.env.example`, duplícalo y renómbralo como `.env`
 3. Cambie las variables de entorno en el archivo `.env` para que se ajusten a su entorno
 
-### Comandos necesarios para iniciar esta API
+## Comandos necesarios para iniciar esta API
 
-# Archivos env
+##3 Archivos env
 
 1. sudo apt install python3-venv
 
-# Entorno virtual
+##3 Entorno virtual
 
 2. python3 -m venv venv
 
-# Dependencia de mysql
+### Dependencia de mysql
 3. pip install Flask Flask-SQLAlchemy pymysql python-dotenv marshmallow
 
-# Instalar
+### Instalar
 4. sudo apt install pipx
 
-# Paquetes
+### Paquetes
 5. pipx install flask
 6. pipx install flask-sqlalchemy
 7. pipx install pymysql
 8. pipx install python-dotenv
 9. pipx install marshmallow
 
-# Docker build
+### Docker build
 10. docker-compose up --build
 
-# mysqlclient linux
+### mysqlclient linux
 11. sudo apt update
 12. sudo apt install pkg-config libmysqlclient-dev
 13. pip install mysqlclient
 
 
-## Levantar el servicio
+# Levantar el servicio
 1. source venv/bin/activate
 2. python run.py
 
-## Para abandonar el servicio de la API
-crtl + c
-deactivate 
+# Para abandonar el servicio de la API
+1. crtl + c
+2. deactivate 
