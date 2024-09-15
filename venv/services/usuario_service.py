@@ -1,5 +1,5 @@
 from venv.db.models import db
-from venv.db.models.usuario import Usuario  # Ajusta según tu estructura de modelos
+from venv.db.models.usuarios import Usuario  # Ajusta según tu estructura de modelos
 
 def obtener_usuarios():
     """Obtiene todos los usuarios."""
@@ -11,7 +11,7 @@ def crear_usuario(data):
         nombre=data.get('nombre'),
         correo=data.get('correo'),
         contrasena=data.get('contrasena'),
-        fecha_registro=data.get('fecha_registro')
+        fecha=data.get('fecha_registro')
     )
     db.session.add(nuevo_usuario)
     db.session.commit()
@@ -28,7 +28,7 @@ def actualizar_usuario(id, data):
         usuario.nombre = data.get('nombre', usuario.nombre)
         usuario.correo = data.get('correo', usuario.correo)
         usuario.contrasena = data.get('contrasena', usuario.contrasena)
-        usuario.fecha_registro = data.get('fecha_registro', usuario.fecha_registro)
+        usuario.fecha = data.get('fecha_registro', usuario.fecha_registro)
         db.session.commit()
         return usuario
     return None

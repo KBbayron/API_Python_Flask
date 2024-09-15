@@ -1,37 +1,32 @@
-from venv.db.models.perfil import Usuario, db
+from venv.db.models.perfiles import Perfil
+from venv.db.models import db
 
-def obtener_usuarios():
-    """Obtiene todos los usuarios."""
-    return Usuario.query.all()
+def obtener_perfiles():
+    """Obtiene todos los perfiles."""
+    return Perfil.query.all()
 
-def crear_usuario(data):
-    """Crea un nuevo usuario."""
-    nuevo_usuario = Usuario(
-        perfil_id=data.get('perfil_id'),
-        nombre=data.get('nombre'),
-        correo=data.get('correo'),
-        contrasena=data.get('contrasena'),
-        fecha_registro=data.get('fecha_registro')
+def crear_perfil(data):
+    """Crea un nuevo perfil."""
+    nuevo_perfil = Perfil(
+        DNI=data.get('DNI'),
+        informacion=data.get('informacion'),
+        status=data.get('status', True)  # Usa True por defecto si no se proporciona
     )
-    db.session.add(nuevo_usuario)
+    db.session.add(nuevo_perfil)
     db.session.commit()
-    return nuevo_usuario
+    return nuevo_perfil
 
-def obtener_usuario_por_id(id):
-    """Obtiene un usuario por ID."""
-    return Usuario.query.get(id)
+def obtener_perfil_por_id(id):
+    """Obtiene un perfil por ID."""
+    return Perfil.query.get(id)
 
-def actualizar_usuario(id, data):
-    """Actualiza un usuario existente."""
-    usuario = Usuario.query.get(id)
-    if usuario:
-        usuario.perfil_id = data.get('perfil_id', usuario.perfil_id)
-        usuario.nombre = data.get('nombre', usuario.nombre)
-        usuario.correo = data.get('correo', usuario.correo)
-        usuario.contrasena = data.get('contrasena', usuario.contrasena)
-        usuario.fecha_registro = data.get('fecha_registro', usuario.fecha_registro)
+def actualizar_perfil(id, data):
+    """Actualiza un perfil existente."""
+    perfil = Perfil.query.get(id)
+    if perfil:
+        perfil.DNI = data.get('DNI', perfil.DNI)
+        perfil.informacion = data.get('informacion', perfil.informacion)
+        perfil.status = data.get('status', perfil.status)
         db.session.commit()
-        return usuario
+        return perfil
     return None
-
-
